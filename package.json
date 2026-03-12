@@ -1,0 +1,26 @@
+{
+  "name": "auto-code-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted autonomous code-fix platform",
+  "scripts": {
+    "dev:api": "pnpm --filter @auto/api dev",
+    "dev:web": "pnpm --filter @auto/web dev",
+    "build": "turbo build",
+    "build:api": "pnpm --filter @auto/api build",
+    "build:web": "pnpm --filter @auto/web build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "db:push": "pnpm --filter @auto/api db:push",
+    "db:generate": "pnpm --filter @auto/api db:generate"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
