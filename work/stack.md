@@ -101,11 +101,3 @@ And the most important architectural decision is:
 
 **single central writer / orchestrator, many remote runners**
 
-That is the cleanest and safest SQLite-based version of your platform.
-
-I can turn this into a **full SQLite-specific implementation stack doc** next: exact packages, folder structure, DB schema, lock queries, and run loop design.
-
-[1]: https://sqlite.org/lang_transaction.html "Transaction"
-[2]: https://sqlite.org/whentouse.html "Appropriate Uses For SQLite"
-[3]: https://docs.temporal.io/temporal-service/persistence "Persistence | Temporal Platform Documentation"
-[4]: https://sqlite.org/wal.html "Write-Ahead Logging"
