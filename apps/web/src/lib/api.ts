@@ -1,4 +1,11 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:7200';
+function getApiBase() {
+  if (typeof window !== 'undefined') {
+    return `http://${window.location.hostname}:7200`;
+  }
+  return process.env.NEXT_PUBLIC_API_URL || 'http://localhost:7200';
+}
+
+const API_BASE = getApiBase();
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE}${endpoint}`, {

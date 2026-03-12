@@ -1,4 +1,7 @@
 {
-  "/runs/page": "app/runs/page.js",
-  "/machines/page": "app/machines/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/folders/page": "app/folders/page.js",
+  "/machines/page": "app/machines/page.js",
+  "/page": "app/page.js",
+  "/runs/page": "app/runs/page.js"
 }
